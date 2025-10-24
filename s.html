@@ -1,70 +1,122 @@
-<html>
-    <head>
-<title>sit "SOHEIl"</title>
-    </head>
-    <body style="background-color: rgb(255, 255, 255);">
-       
-        
-<body>
+<!DOCTYPE html>
+<html lang="fa">
 
-  <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Are you interested in cars?</h2>
-  <input type="text" id="answer">
-  <button onclick="check()">check</button>
-  <p id="error" style="color:red;"></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarFig</title>
+    <style>
+        body {
+            font-family: "Vazirmatn", sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
 
-  <div id="content" style="display:none;">
-    <h1 style="color: rgb(11, 190, 26);">welcom to sit</h1>
-    <p>
-        <p br style="font-size: 20pxpx;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-align: center;"><u>helow</u>  
-            </p>
-            <p style="font-size: 30px;
+        header {
+            background-color: #5a0286;
+            color: rgb(255, 255, 255);
+            margin: 15px;
             text-align: center;
-            background-color:gray;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                companie`s
-            </p>
-            <p style="text-align:center;">
-            <img src="bme.png"width="150px;">
-            </p>
-            <p style="text-align: center;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                BMW
-            </p>
-            <p style="text-align: center;">
-                <button><a href="s2.html">view cars</a></button> 
-            </p>
-            <hr style="border: none;height: 5px;background-color: gray;">
+            padding: 20px 0;
+            font-size: 1.8rem;
+            border-radius: 20px;
+        }
 
-            <p style="text-align: center;">
-                <img src="bens.jpg" width="150px">
-            </p>
-            <p style="text-align: center;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                Bens
-            </p>
-            <p style="text-align: center;">
-                <button><a href="s2.html">view cars</a></button> 
-            </p>
-       <hr style="border: none;height: 5px;background-color: gray;"></p>
-  </div>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+            gap: 20px;
+        }
 
-  <script>
-    function check() {
-      let a = document.getElementById("answer").value.toLowerCase();
-      if (a === "yes") {
-        document.getElementById("content").style.display = "block";
-      } else {
-        document.getElementById("error").innerText = "شما اجازه ورود ندارید";
-      }
-    }
-    
-  </script>
+        .car-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(111, 0, 136, 0.804);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
 
+        .car-card:hover {
+            transform: scale(1.10);
+        }
+
+        .car-card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .car-card h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .info-box {
+            background: #5a0286;
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            text-align: center;
+            line-height: 1.8;
+            transition: transform 0.3s ease;
+        }
+
+        .info-box:hover {
+            transform:scaleX(1.10);
+            box-shadow:0 5px 10px #5a0286;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        ماشین‌ها
+    </header>
+
+    <div class="container">
+        <div class="car-card">
+            <img src="bme.png" alt="BMW">
+            <a href="e2.html">
+                <h3>BMW M5 e60</h3>
+            </a>
+        </div>
+
+        <div class="car-card">
+            <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/audi-1957037_960_720.jpg" alt="Audi">
+            <a href="e2.html">
+                <h3>Audi R8</h3>
+            </a>
+
+        </div>
+
+        <div class="car-card">
+            <img src="https://cdn.pixabay.com/photo/2017/08/06/00/16/ferrari-2580833_960_720.jpg" alt="Ferrari">
+            <a href="e2.html">
+                <h3>Ferrari 488</h3>
+            </a>
+
+        </div>
+
+        <div class="car-card">
+            <img src="bens.jpg" alt="Mercedes">
+            <a href="e2.html">
+                <h3>Mercedes Benz</h3>
+            </a>
+
+        </div>
+    </div>
+
+    </div>
+    <a href="info.html">
+    <h2 class="info-box">برای اطلاعات سایت اینجا کلیک کن
+    </h2>
+</a>
 </body>
 
-
-
-    </body>
 </html>
