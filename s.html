@@ -15,9 +15,70 @@
         }
 
         header {
-            background-color: #5a0286;
+            background-color: #bb53ef;
             color: rgb(255, 255, 255);
             margin: 15px;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.8rem;
+            border-radius: 20px;
+            border: 5px solid #d39af0;
+        }
+
+        .MENO {
+            border: 3px solid #d39af0;
+            margin: 7px;
+            border-radius: 10px;
+        }
+
+        .meno {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .meno-home {
+            background-color: #d39af0;
+            display: inline-block;
+            border-radius: 10px;
+            width: 20%;
+        }
+
+        .meno-home:hover {
+            transform: scale(1.10);
+            transition: transform 0.3s ease;
+        }
+
+        .meno-info {
+            background-color: #d39af0;
+            display: inline-block;
+            border-radius: 10px;
+            width: 20%;
+        }
+
+        .meno-info:hover {
+            transform: scale(1.10);
+            transition: transform 0.3s ease;
+        }
+
+        .meno-login {
+            background-color: #d39af0;
+            display: inline-block;
+            border-radius: 10px;
+            width: 20%;
+        }
+
+        .meno-login:hover {
+            transform: scale(1.10);
+            transition: transform 0.3s ease;
+        }
+
+        .cars {
+            background-color: #5a0286;
+            color: rgb(255, 255, 255);
+            margin: 45px;
             text-align: center;
             padding: 20px 0;
             font-size: 1.8rem;
@@ -68,16 +129,38 @@
         }
 
         .info-box:hover {
-            transform:scaleX(1.10);
-            box-shadow:0 5px 10px #5a0286;
+            transform: scaleX(1.10);
+            box-shadow: 0 5px 10px #5a0286;
         }
     </style>
 </head>
 
 <body>
     <header>
-        ماشین‌ها
+        <div class="MENO">
+            MENO
+        </div>
+
+        <div class="meno">
+
+            <div class="meno-home">
+                <a href="s.html">home</a>
+            </div>
+
+            <div class="meno-info">
+                <a href="info.html">info</a>
+            </div>
+
+            <div class="meno-login">
+                <a href="login.html">login</a>
+            </div>
+
+        </div>
     </header>
+
+    <div class="cars">
+        ماشین ها
+    </div>
 
     <div class="container">
         <div class="car-card">
@@ -114,9 +197,9 @@
 
     </div>
     <a href="info.html">
-    <h2 class="info-box">برای اطلاعات سایت اینجا کلیک کن
-    </h2>
-</a>
+        <h2 class="info-box">برای اطلاعات سایت اینجا کلیک کن
+        </h2>
+    </a>
 </body>
 
 </html>

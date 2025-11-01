@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ورود به سایت</title>
+  <style>
+    body {
+      font-family: 'Vazir', sans-serif;
+      background-color: #8b04da;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #7906c0;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #content {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>ایا به ماشین علاقه دارید؟</h2>
+    <input type="text" id="loginInput" placeholder="بله یا خیر">
+    <button onclick="checkLogin()">ورود</button>
+    <div id="content"> خوش آمدید.</div>
+  </div>
+
+  <script>
+    function checkLogin() {
+      const input = document.getElementById("loginInput").value.trim();
+      if (input === "بله") {
+        document.getElementById("content").style.display = "block";
+      } else {
+        alert("شما امکان دسترسی به این سایت را ندارید");
+      }
+    }
+  </script>
+</body>
+</html>
